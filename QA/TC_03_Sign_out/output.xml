@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221204 20:55:06.895" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 03 03" source="/home/aaron/QA/TC_03_Sign_out/TC_03_03.robot">
+<test id="s1-t1" name="Verify if accepting logout redirects user to trade page" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://sintetik.xyz/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221204 20:55:07.028" level="INFO">Opening browser 'Chrome' to base url 'https://sintetik.xyz/'.</msg>
+<status status="PASS" starttime="20221204 20:55:07.028" endtime="20221204 20:55:29.610"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221204 20:55:29.611" endtime="20221204 20:55:29.727"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button[2]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221204 20:55:29.727" endtime="20221204 20:55:29.766"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221204 20:55:29.766" level="INFO">Clicking button '//*[@id="header"]/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20221204 20:55:29.766" endtime="20221204 20:55:29.892"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="signin"]/div[2]/h2/b/center</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221204 20:55:29.892" endtime="20221204 20:55:29.926"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="uname-input"]</arg>
+<arg>naruto@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221204 20:55:29.927" level="INFO">Typing text 'naruto@yahoo.com' into text field '//*[@id="uname-input"]'.</msg>
+<status status="PASS" starttime="20221204 20:55:29.927" endtime="20221204 20:55:30.087"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="pw-input"]</arg>
+<arg>Abcd1234!</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221204 20:55:30.088" level="INFO">Typing password into text field '//*[@id="pw-input"]'.</msg>
+<msg timestamp="20221204 20:55:30.160" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221204 20:55:30.233" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221204 20:55:30.087" endtime="20221204 20:55:30.233"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="signin"]/div[2]/form/center[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221204 20:55:30.234" level="INFO">Clicking button '//*[@id="signin"]/div[2]/form/center[1]/button'.</msg>
+<status status="PASS" starttime="20221204 20:55:30.234" endtime="20221204 20:55:30.383"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="balance-amount"]/font</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221204 20:55:30.383" endtime="20221204 20:55:31.130"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221204 20:55:31.131" level="INFO">Clicking button '//*[@id="header"]/div/div[3]/button'.</msg>
+<status status="PASS" starttime="20221204 20:55:31.130" endtime="20221204 20:55:31.299"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[4]/ul/li[3]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221204 20:55:31.349" level="INFO">Element '//*[@id="header"]/div/div[4]/ul/li[3]' is displayed.</msg>
+<status status="PASS" starttime="20221204 20:55:31.300" endtime="20221204 20:55:31.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[4]/ul/li[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221204 20:55:31.350" level="INFO">Clicking element '//*[@id="header"]/div/div[4]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20221204 20:55:31.349" endtime="20221204 20:55:31.452"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20221204 20:55:31.453" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20221204 20:55:31.453" endtime="20221204 20:55:31.472"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221204 20:55:34.474" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221204 20:55:31.473" endtime="20221204 20:55:34.474"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div[1]/div[4]/span[1]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221204 20:55:34.497" level="INFO">Element '//*[@id="root"]/div/div[2]/div[1]/div[4]/span[1]' is displayed.</msg>
+<status status="PASS" starttime="20221204 20:55:34.475" endtime="20221204 20:55:34.497"/>
+</kw>
+<status status="PASS" starttime="20221204 20:55:07.026" endtime="20221204 20:55:34.498"/>
+</test>
+<status status="PASS" starttime="20221204 20:55:06.896" endtime="20221204 20:55:34.500"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 03 03">TC 03 03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

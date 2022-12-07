@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221201 23:24:36.825" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 01 01" source="/home/aaron/QA/Sign-In/TC_01_01.robot">
+<test id="s1-t1" name="Open Sintetik and Login" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://sintetik.xyz/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 23:24:36.904" level="INFO">Opening browser 'Chrome' to base url 'https://sintetik.xyz/'.</msg>
+<status status="PASS" starttime="20221201 23:24:36.904" endtime="20221201 23:24:42.536"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 23:24:42.537" endtime="20221201 23:24:42.665"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button[2]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221201 23:24:42.666" endtime="20221201 23:24:42.707"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 23:24:42.708" level="INFO">Clicking button '//*[@id="header"]/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20221201 23:24:42.707" endtime="20221201 23:24:42.817"/>
+</kw>
+<status status="PASS" starttime="20221201 23:24:36.903" endtime="20221201 23:24:42.818"/>
+</test>
+<status status="PASS" starttime="20221201 23:24:36.825" endtime="20221201 23:24:42.819"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 01 01">TC 01 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

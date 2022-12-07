@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221204 19:33:19.834" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 02 15" source="/home/aaron/QA/TC_02_Sign_up/TC_02_15.robot">
+<test id="s1-t1" name="Verify if “sign in” navigates to Sign in page." line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://sintetik.xyz/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221204 19:33:19.916" level="INFO">Opening browser 'Chrome' to base url 'https://sintetik.xyz/'.</msg>
+<status status="PASS" starttime="20221204 19:33:19.916" endtime="20221204 19:33:25.679"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221204 19:33:25.679" endtime="20221204 19:33:25.817"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button[1]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221204 19:33:25.817" endtime="20221204 19:33:25.894"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221204 19:33:25.896" level="INFO">Clicking button '//*[@id="header"]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221204 19:33:25.895" endtime="20221204 19:33:26.120"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="signup"]/div[1]/h2/b/center</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221204 19:33:26.122" endtime="20221204 19:33:26.154"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221204 19:33:31.155" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221204 19:33:26.155" endtime="20221204 19:33:31.156"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="signup"]/div[1]/form/center[2]/h6/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221204 19:33:31.157" level="INFO">Clicking element '//*[@id="signup"]/div[1]/form/center[2]/h6/a'.</msg>
+<status status="PASS" starttime="20221204 19:33:31.156" endtime="20221204 19:33:31.482"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221204 19:33:36.482" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221204 19:33:31.482" endtime="20221204 19:33:36.483"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="signin"]/div[2]/h2/b/center</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221204 19:33:36.483" endtime="20221204 19:33:36.511"/>
+</kw>
+<status status="PASS" starttime="20221204 19:33:19.915" endtime="20221204 19:33:36.511"/>
+</test>
+<status status="PASS" starttime="20221204 19:33:19.835" endtime="20221204 19:33:36.511"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 02 15">TC 02 15</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

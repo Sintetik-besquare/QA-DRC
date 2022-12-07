@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221203 21:56:35.292" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 01 04" source="/home/aaron/QA/TC_01_Sign_in/TC_01_04.robot">
+<test id="s1-t1" name="Verify login with a invalid email and invalid password" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://sintetik.xyz/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221203 21:56:35.374" level="INFO">Opening browser 'Chrome' to base url 'https://sintetik.xyz/'.</msg>
+<status status="PASS" starttime="20221203 21:56:35.373" endtime="20221203 21:56:41.952"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221203 21:56:41.952" endtime="20221203 21:56:42.059"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button[2]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 21:56:42.060" endtime="20221203 21:56:42.078"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div[3]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221203 21:56:42.080" level="INFO">Clicking button '//*[@id="header"]/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20221203 21:56:42.078" endtime="20221203 21:56:42.191"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="signin"]/div[2]/h2/b/center</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221203 21:56:42.191" endtime="20221203 21:56:42.226"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="uname-input"]</arg>
+<arg>test@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221203 21:56:42.227" level="INFO">Typing text 'test@yahoo.com' into text field '//*[@id="uname-input"]'.</msg>
+<status status="PASS" starttime="20221203 21:56:42.227" endtime="20221203 21:56:42.307"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="pw-input"]</arg>
+<arg>Abcd123!</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221203 21:56:42.309" level="INFO">Typing password into text field '//*[@id="pw-input"]'.</msg>
+<msg timestamp="20221203 21:56:42.381" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221203 21:56:42.424" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221203 21:56:42.308" endtime="20221203 21:56:42.425"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="signin"]/div[2]/form/center[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221203 21:56:42.425" level="INFO">Clicking button '//*[@id="signin"]/div[2]/form/center[1]/button'.</msg>
+<status status="PASS" starttime="20221203 21:56:42.425" endtime="20221203 21:56:42.515"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221203 21:56:52.516" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221203 21:56:42.516" endtime="20221203 21:56:52.517"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20221203 21:56:52.517" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20221203 21:56:52.517" endtime="20221203 21:56:52.529"/>
+</kw>
+<status status="PASS" starttime="20221203 21:56:35.373" endtime="20221203 21:56:52.529"/>
+</test>
+<status status="PASS" starttime="20221203 21:56:35.293" endtime="20221203 21:56:52.531"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 01 04">TC 01 04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
